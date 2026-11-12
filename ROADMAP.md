@@ -6,7 +6,7 @@
 - [x] Set up local development
 - [x] Create homepage
 - [x] Create shared navigation and layout
-- [ ] Create Technical page
+- [x] Create Technical page
 - [ ] Create Creative page
 - [ ] Create About page
 
@@ -27,3 +27,29 @@
 - [ ] Configure GitHub Actions
 - [ ] Publish website
 - [ ] Test automatic updates
+
+## Phase 5 — Homepage & Visual Design
+
+- [ ] Redesign homepage
+- [ ] Add automatic Featured Projects section
+- [ ] Establish typography and visual identity
+- [ ] Add real project cover images
+- [ ] Improve responsive layout
+- [ ] Test mobile navigation
+
+## Phase 6 — Real Portfolio Content
+
+- [ ] Restore original Squarespace architecture projects
+- [ ] Replace Architecture Study demo
+- [ ] Update Wine Picker with real screenshots and links
+- [ ] Add more technical projects
+- [ ] Add other creative works
+- [ ] Improve About page and contact links
+
+## Phase 7 — Future Expansion
+
+- [ ] Add project category filters if needed
+- [ ] Consider Notes or Journal section
+- [ ] Improve SEO and accessibility
+- [ ] Review performance and image optimization
+- [ ] Consider custom domain (optional)
