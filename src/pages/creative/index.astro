@@ -1,0 +1,46 @@
+---
+import PortfolioPage from '../../components/PortfolioPage.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import { getCollection } from 'astro:content';
+
+// Read all Creative projects
+const creativeProjects = await getCollection(
+  'projects',
+  ({ data }) => data.section === 'creative'
+);
+
+// Sort projects by their order value
+creativeProjects.sort(
+  (a, b) => (a.data.order ?? 999) - (b.data.order ?? 999)
+);
+---
+
+<PortfolioPage
+  category="PORTFOLIO / CREATIVE"
+  title="Creative Works"
+  description="A collection of architecture, art, design, and hands-on creative explorations."
+  sectionTitle="Selected Works"
+>
+  <div class="project-grid">
+    {
+      creativeProjects.map((project) => (
+        <ProjectCard project={project} />
+      ))
+    }
+  </div>
+</PortfolioPage>
+
+<style>
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+    margin-top: 30px;
+  }
+
+  @media (max-width: 700px) {
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
